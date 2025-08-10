@@ -3,6 +3,7 @@ services:
   auth-service:
     build: .
     ports:
-      - "${PORT}:${PORT}"
+    - "4000:4000"
+
     env_file: .env
     restart: always
